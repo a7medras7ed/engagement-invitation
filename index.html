@@ -4,25 +4,15 @@
   <meta charset="UTF-8">
   <title>دعوة خطوبة أحمد ♥ أسماء</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri&family=Reem+Kufi+Ink&family=Pacifico&family=Tajawal:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri&family=Reem+Kufi+Ink&family=Pacifico&family=Tajawal:wght@700&family=Scheherazade+New:wght@700&family=Lateef&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Cairo', sans-serif;
-      background: #000;
+      background-color: #4B2E2E;
       overflow-x: hidden;
       color: white;
-    }
-    video.bg-video {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
-      object-fit: cover;
-      opacity: 0.5;
     }
     .container {
       position: relative;
@@ -31,39 +21,44 @@
       padding: 50px 20px 100px;
     }
     #engagement-heading {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 26px;
+      margin-bottom: 15px;
       color: #ffd700;
-      font-family: 'Tajawal', sans-serif;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 50px;
+      border: 2px solid gold;
+      animation: fadeIn 1.5s ease;
     }
     #names {
-      font-size: 48px;
+      font-size: 58px;
       font-family: 'Amiri', serif;
       color: #ffd700;
       margin-bottom: 20px;
       line-height: 1.6;
+      animation: fadeIn 2s ease;
     }
     #countdown {
       display: inline-block;
       padding: 15px 30px;
-      font-size: 30px;
+      font-size: 32px;
       border-radius: 50px;
       background-color: rgba(0, 0, 0, 0.6);
-      color: white;
+      color: #ffd700;
       font-weight: bold;
       margin-bottom: 30px;
       direction: ltr;
-      font-family: 'Cairo', sans-serif;
+      font-family: 'Tajawal', sans-serif;
       letter-spacing: 2px;
       border: 3px solid gold;
-    }
-    .info {
-      text-align: center;
+      animation: fadeIn 2.5s ease;
     }
     .info span {
       display: block;
       margin: 10px auto;
       font-size: 22px;
+      animation: fadeIn 3s ease;
     }
     .icon {
       font-size: 40px;
@@ -105,8 +100,8 @@
       margin-top: 10px;
     }
     .qr-code img {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       filter: hue-rotate(45deg) brightness(1.2) saturate(1.5);
     }
     .ring-a {
@@ -127,6 +122,28 @@
       transform: scale(1.3) rotate(-5deg);
       color: #fff;
     }
+    .footer-credit {
+      font-family: 'Lateef', serif;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 30px 10px 20px;
+      line-height: 1.6;
+    }
+    .footer-credit span {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ffb6c1;
+      font-size: 22px;
+      font-family: 'Scheherazade New', serif;
+    }
+    .signature {
+      text-align: center;
+      font-size: 18px;
+      color: #FFDDEE;
+      font-family: 'Reem Kufi Ink', sans-serif;
+      margin-bottom: 20px;
+    }
     @keyframes fall {
       0% {transform: translateY(-50px); opacity: 1;}
       100% {transform: translateY(110vh); opacity: 0;}
@@ -139,77 +156,60 @@
 </head>
 <body>
   <audio id="hover-sound" src="https://cdn.pixabay.com/download/audio/2022/03/16/audio_9c3e92b4c0.mp3?filename=click-124467.mp3"></audio>
-  <video autoplay muted loop class="bg-video">
-    <source src="https://cdn.pixabay.com/video/2018/10/23/19465-295221814_large.mp4" type="video/mp4">
-  </video>
   <div class="container">
     <div id="engagement-heading">💌 يتبقى على خطوبه</div>
     <div id="names">أَحْمَد ❤️ أَسْمَاء</div>
-    <div id="countdown"></div>
-    <p style="font-size: 20px; color: #ffd700; font-weight: bold; margin: 10px 0 20px; animation: fadeIn 2s ease forwards;">الأفراح لا تكتمل إلا بوجودكم بيننا ❤️</p>
+    <div id="countdown">Loading...</div>
     <div class="info">
-      <span style="animation: fadeIn 2s ease forwards 0.5s;">💍 ندعوكم لمشاركتنا فرحة الخطوبة يوم الإثنين</span>
-      <span style="animation: fadeIn 2s ease forwards 1s;">📅 23 يونيو 2025</span>
-      <span style="animation: fadeIn 2s ease forwards 1.5s;">⏰ الساعة 8 مساءً</span>
-      <span style="display: inline-block; padding: 10px 20px; border-radius: 30px; background: linear-gradient(to right, gold, #ffd700); color: black; font-weight: bold; margin-top: 20px; animation: fadeIn 2s ease forwards 2s;">
-        <span style="display: inline-block; padding: 6px 20px; border: 3px solid gold; border-radius: 30px; color: white; background-color: rgba(0, 0, 0, 0.5); font-weight: bold;">📍 العنوان: قاعه الملكيه _ مشتل كرم _ دمنهور</span>
-      </span>
+      <span>💍 ندعوكم لمشاركتنا فرحة الخطوبة يوم الإثنين</span>
+      <span>📅 23 يونيو 2025</span>
+      <span>⏰ الساعة 8 مساءً</span>
+      <span style="background: rgba(0, 0, 0, 0.4); border: 2px solid gold; padding: 8px 20px; border-radius: 50px; display: inline-block;">📍 قاعة الملكية - مشتل كرم - دمنهور</span>
+      <span>والعاقبة عندكم في المسرات ❤️</span>
     </div>
-    <div class="icon" onmouseover="playSound()">💍</div>
-    <img src="https://cdn-icons-png.flaticon.com/512/1050/1050361.png" alt="ring" width="100" style="opacity: 0.8; margin: 20px auto 10px; display: block;" onmouseover="playSound()">
     <div class="ring-a">
-      <span onmouseover="playSound()">A</span>
-      <span>💍</span>
-      <span onmouseover="playSound()">A</span>
-    </div>
-    <div style="font-size: 20px; margin-top: 10px; color: white;">والعاقبة عندكم في المسرات 🎉</div>
-    <div class="share-buttons">
-      <i class="fab fa-whatsapp" title="مشاركة على واتساب" onclick="shareWhatsApp()"></i>
-      <i class="fab fa-facebook" title="مشاركة على فيسبوك" onclick="shareFacebook()"></i>
-      <i class="fas fa-copy" title="نسخ الرابط" onclick="copyLink()"></i>
-      <i class="fas fa-map-marker-alt" title="عرض الخريطة" onclick="openMap()"></i>
+      <span>A</span>
+      <i class="fa fa-ring"></i>
+      <span>A</span>
     </div>
     <div class="qr-code">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com&size=100x100" alt="QR Code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://theeb-invite.github.io/&size=60x60" alt="QR Code">
+    </div>
+    <div class="share-buttons">
+      <i class="fab fa-whatsapp" title="شارك على واتساب"></i>
+      <i class="fab fa-facebook" title="شارك على فيسبوك"></i>
+      <i class="fas fa-copy" title="نسخ رابط الدعوة"></i>
+      <i class="fas fa-map-marker-alt" title="عرض الخريطة"></i>
     </div>
   </div>
+  <div class="footer-credit"></div>
+  <div class="signature">بتوقيع الحب والإبداع من مؤسسة ذيب ❤️</div>
   <script>
+    const countdownEl = document.getElementById("countdown");
     const targetDate = new Date("2025-06-23T20:00:00").getTime();
-    const countdown = document.getElementById("countdown");
     setInterval(() => {
       const now = new Date().getTime();
       const distance = targetDate - now;
+      if (distance < 0) {
+        countdownEl.innerHTML = "🎉 تمت الخطوبة!";
+        return;
+      }
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      countdown.innerHTML = `${days}d | ${hours}h | ${minutes}m | ${seconds}s`;
+      countdownEl.innerHTML = `${days}d | ${hours}h | ${minutes}m | ${seconds}s`;
     }, 1000);
 
-    function shareWhatsApp() {
-      window.open("https://wa.me/?text=" + encodeURIComponent(document.title + " - https://example.com"));
-    }
-    function shareFacebook() {
-      window.open("https://www.facebook.com/sharer/sharer.php?u=https://example.com");
-    }
-    function copyLink() {
-      navigator.clipboard.writeText("https://example.com");
-      alert("تم نسخ الرابط!");
-    }
-    function openMap() {
-      window.open("https://www.google.com/maps/search/?api=1&query=قاعة+الملكيه,+مشتل+كرم,+دمنهور", "_blank");
-    }
-    function playSound() {
-      document.getElementById("hover-sound").play();
-    }
-    for (let i = 0; i < 30; i++) {
+    function createHearts() {
       const heart = document.createElement('div');
       heart.className = 'heart';
       heart.innerHTML = '💖';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDelay = Math.random() * 5 + 's';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
       document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
     }
+    setInterval(createHearts, 300);
   </script>
 </body>
 </html>
